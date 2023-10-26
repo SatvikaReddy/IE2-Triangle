@@ -1,11 +1,8 @@
-import unittest
 from isTriangle import Triangle
-# import sys
-# sys.path.append("..")
-# from src.Triangle import Triangle
+import unittest
 
-class MutationAdequateTest(unittest.TestCase):
-    
+class TestStatementCoverage(unittest.TestCase):
+
     def test1(self):
         # Test case 1: Scalene triangle
         triangle_result1 = Triangle.classify(20, 21, 23)
@@ -61,33 +58,7 @@ class MutationAdequateTest(unittest.TestCase):
         triangle_result11 = Triangle.classify(6, 2, 1)
         self.assertEqual(triangle_result11, Triangle.Type.INVALID)
         
-    def test12(self):
-        # Test case 12: a=0 shouldn't be accepted - Invalid triangle
-        triangle_result11 = Triangle.classify(0, 2, 2)
-        self.assertEqual(triangle_result11, Triangle.Type.INVALID)
         
-    def test13(self):
-        # Test case 13: b=0 shouldn't be accepted - Invalid triangle
-        triangle_result11 = Triangle.classify(2, 0, 2)
-        self.assertEqual(triangle_result11, Triangle.Type.INVALID)
         
-    def test14(self):
-        # Test case 14: a + b = c shouldnt be accepted - Invalid triangle
-        triangle_result11 = Triangle.classify(5, 4, 9)
-        self.assertEqual(triangle_result11, Triangle.Type.INVALID)
-        
-    def test15(self):
-        # Test case 15: b + c = a shouldnt be accepted - Invalid triangle
-        triangle_result11 = Triangle.classify(9, 5, 4)
-        self.assertEqual(triangle_result11, Triangle.Type.INVALID)
-    
-    def test16(self):
-        # Test case 16: a + c = b shouldnt be accepted - Invalid triangle
-        triangle_result11 = Triangle.classify(5, 9, 4)
-        self.assertEqual(triangle_result11, Triangle.Type.INVALID)
-        
-
 if __name__ == '__main__':
     unittest.main()
-
-

@@ -1,8 +1,8 @@
 [*] Start mutation process:
    - targets: isTriangle
    - tests: test_mutationAdequate
-[*] 1 tests passed:
-   - test_mutationAdequate [0.00010 s]
+[*] 16 tests passed:
+   - test_mutationAdequate [0.00047 s]
 [*] Start mutants generation and execution:
    - [#   1] AOR isTriangle: 
 --------------------------------------------------------------------------------
@@ -17,7 +17,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17339 s] survived
+[0.00582 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#   2] AOR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -31,7 +31,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17117 s] survived
+[0.00583 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#   3] AOR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -45,7 +45,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17145 s] survived
+[0.00550 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#   4] AOR isTriangle: 
 --------------------------------------------------------------------------------
   38:         
@@ -59,7 +59,7 @@
   45:             return Triangle.Type.ISOSCELES
   46:         elif (trian == 3 and b + c > a):
 --------------------------------------------------------------------------------
-[0.17041 s] survived
+[0.00672 s] killed by test2 (test_mutationAdequate.MutationAdequateTest)
    - [#   5] AOR isTriangle: 
 --------------------------------------------------------------------------------
   40:             return Triangle.Type.EQUILATERAL
@@ -73,7 +73,7 @@
   47:             return Triangle.Type.ISOSCELES
   48:         
 --------------------------------------------------------------------------------
-[0.17106 s] survived
+[0.00587 s] killed by test4 (test_mutationAdequate.MutationAdequateTest)
    - [#   6] AOR isTriangle: 
 --------------------------------------------------------------------------------
   42:         if (trian == 1 and a + b > c):
@@ -86,7 +86,7 @@
   48:         
   49:         return Triangle.Type.INVALID
 --------------------------------------------------------------------------------
-[0.17280 s] survived
+[0.00593 s] killed by test3 (test_mutationAdequate.MutationAdequateTest)
    - [#   7] ASR isTriangle: 
 --------------------------------------------------------------------------------
   23:         
@@ -100,7 +100,7 @@
   30:         if b == c:
   31:             trian += 3
 --------------------------------------------------------------------------------
-[0.17273 s] survived
+[0.00590 s] killed by test2 (test_mutationAdequate.MutationAdequateTest)
    - [#   8] ASR isTriangle: 
 --------------------------------------------------------------------------------
   25:         
@@ -114,7 +114,7 @@
   32:         
   33:         if trian == 0:
 --------------------------------------------------------------------------------
-[0.17100 s] survived
+[0.00579 s] killed by test4 (test_mutationAdequate.MutationAdequateTest)
    - [#   9] ASR isTriangle: 
 --------------------------------------------------------------------------------
   27:             trian += 1
@@ -128,7 +128,7 @@
   34:             if (a + b <= c or a + c <= b or b + c <= a):
   35:                 return Triangle.Type.INVALID
 --------------------------------------------------------------------------------
-[0.17125 s] survived
+[0.00556 s] killed by test3 (test_mutationAdequate.MutationAdequateTest)
    - [#  10] COI isTriangle: 
 --------------------------------------------------------------------------------
   17:     def classify(a, b, c):'''
@@ -142,7 +142,7 @@
   24:         trian = 0
   25:         
 --------------------------------------------------------------------------------
-[0.17234 s] survived
+[0.00633 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  11] COI isTriangle: 
 --------------------------------------------------------------------------------
   22:             return Triangle.Type.INVALID
@@ -156,7 +156,7 @@
   29:             trian += 2
   30:         if b == c:
 --------------------------------------------------------------------------------
-[0.17073 s] survived
+[0.00599 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  12] COI isTriangle: 
 --------------------------------------------------------------------------------
   24:         trian = 0
@@ -170,7 +170,7 @@
   31:             trian += 3
   32:         
 --------------------------------------------------------------------------------
-[0.16996 s] survived
+[0.00746 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  13] COI isTriangle: 
 --------------------------------------------------------------------------------
   26:         if a == b:
@@ -184,7 +184,7 @@
   33:         if trian == 0:
   34:             if (a + b <= c or a + c <= b or b + c <= a):
 --------------------------------------------------------------------------------
-[0.17144 s] survived
+[0.00587 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  14] COI isTriangle: 
 --------------------------------------------------------------------------------
   29:             trian += 2
@@ -198,7 +198,7 @@
   36:             else:
   37:                 return Triangle.Type.SCALENE
 --------------------------------------------------------------------------------
-[0.17156 s] survived
+[0.00590 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  15] COI isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -212,7 +212,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17143 s] survived
+[0.00589 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  16] COI isTriangle: 
 --------------------------------------------------------------------------------
   35:                 return Triangle.Type.INVALID
@@ -226,7 +226,7 @@
   42:         if (trian == 1 and a + b > c):
   43:             return Triangle.Type.ISOSCELES
 --------------------------------------------------------------------------------
-[0.19311 s] survived
+[0.00597 s] killed by test2 (test_mutationAdequate.MutationAdequateTest)
    - [#  17] COI isTriangle: 
 --------------------------------------------------------------------------------
   38:         
@@ -240,7 +240,7 @@
   45:             return Triangle.Type.ISOSCELES
   46:         elif (trian == 3 and b + c > a):
 --------------------------------------------------------------------------------
-[0.17507 s] survived
+[0.00612 s] killed by test2 (test_mutationAdequate.MutationAdequateTest)
    - [#  18] COI isTriangle: 
 --------------------------------------------------------------------------------
   40:             return Triangle.Type.EQUILATERAL
@@ -254,7 +254,7 @@
   47:             return Triangle.Type.ISOSCELES
   48:         
 --------------------------------------------------------------------------------
-[0.17090 s] survived
+[0.00668 s] killed by test4 (test_mutationAdequate.MutationAdequateTest)
    - [#  19] COI isTriangle: 
 --------------------------------------------------------------------------------
   42:         if (trian == 1 and a + b > c):
@@ -267,7 +267,7 @@
   48:         
   49:         return Triangle.Type.INVALID
 --------------------------------------------------------------------------------
-[0.17097 s] survived
+[0.00635 s] killed by test3 (test_mutationAdequate.MutationAdequateTest)
    - [#  20] DDL isTriangle: 
 --------------------------------------------------------------------------------
   12:         EQUILATERAL = 2
@@ -283,7 +283,7 @@
   20:         '''
   21:         if (a <= 0 or b <= 0 or c <= 0):
 --------------------------------------------------------------------------------
-[0.17056 s] survived
+[0.00605 s] survived
    - [#  21] LCR isTriangle: 
 --------------------------------------------------------------------------------
   17:     def classify(a, b, c):'''
@@ -297,7 +297,7 @@
   24:         trian = 0
   25:         
 --------------------------------------------------------------------------------
-[0.17331 s] survived
+[0.00611 s] killed by test12 (test_mutationAdequate.MutationAdequateTest)
    - [#  22] LCR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -311,7 +311,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17396 s] survived
+[0.00596 s] killed by test10 (test_mutationAdequate.MutationAdequateTest)
    - [#  23] LCR isTriangle: 
 --------------------------------------------------------------------------------
   38:         
@@ -325,7 +325,7 @@
   45:             return Triangle.Type.ISOSCELES
   46:         elif (trian == 3 and b + c > a):
 --------------------------------------------------------------------------------
-[0.17450 s] survived
+[0.00644 s] killed by test9 (test_mutationAdequate.MutationAdequateTest)
    - [#  24] LCR isTriangle: 
 --------------------------------------------------------------------------------
   40:             return Triangle.Type.EQUILATERAL
@@ -339,7 +339,7 @@
   47:             return Triangle.Type.ISOSCELES
   48:         
 --------------------------------------------------------------------------------
-[0.17068 s] survived
+[0.00631 s] killed by test9 (test_mutationAdequate.MutationAdequateTest)
    - [#  25] LCR isTriangle: 
 --------------------------------------------------------------------------------
   42:         if (trian == 1 and a + b > c):
@@ -352,7 +352,7 @@
   48:         
   49:         return Triangle.Type.INVALID
 --------------------------------------------------------------------------------
-[0.17157 s] survived
+[0.00624 s] killed by test9 (test_mutationAdequate.MutationAdequateTest)
    - [#  26] ROR isTriangle: 
 --------------------------------------------------------------------------------
   17:     def classify(a, b, c):'''
@@ -366,7 +366,7 @@
   24:         trian = 0
   25:         
 --------------------------------------------------------------------------------
-[0.17320 s] survived
+[0.00600 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  27] ROR isTriangle: 
 --------------------------------------------------------------------------------
   17:     def classify(a, b, c):'''
@@ -380,7 +380,7 @@
   24:         trian = 0
   25:         
 --------------------------------------------------------------------------------
-[0.17128 s] survived
+[0.00634 s] killed by test12 (test_mutationAdequate.MutationAdequateTest)
    - [#  28] ROR isTriangle: 
 --------------------------------------------------------------------------------
   17:     def classify(a, b, c):'''
@@ -394,7 +394,7 @@
   24:         trian = 0
   25:         
 --------------------------------------------------------------------------------
-[0.17205 s] survived
+[0.00596 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  29] ROR isTriangle: 
 --------------------------------------------------------------------------------
   17:     def classify(a, b, c):'''
@@ -408,7 +408,7 @@
   24:         trian = 0
   25:         
 --------------------------------------------------------------------------------
-[0.19899 s] survived
+[0.00609 s] killed by test13 (test_mutationAdequate.MutationAdequateTest)
    - [#  30] ROR isTriangle: 
 --------------------------------------------------------------------------------
   17:     def classify(a, b, c):'''
@@ -422,7 +422,7 @@
   24:         trian = 0
   25:         
 --------------------------------------------------------------------------------
-[0.18066 s] survived
+[0.00605 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  31] ROR isTriangle: 
 --------------------------------------------------------------------------------
   17:     def classify(a, b, c):'''
@@ -436,7 +436,7 @@
   24:         trian = 0
   25:         
 --------------------------------------------------------------------------------
-[0.17173 s] survived
+[0.00627 s] killed by test8 (test_mutationAdequate.MutationAdequateTest)
    - [#  32] ROR isTriangle: 
 --------------------------------------------------------------------------------
   22:             return Triangle.Type.INVALID
@@ -450,7 +450,7 @@
   29:             trian += 2
   30:         if b == c:
 --------------------------------------------------------------------------------
-[0.17113 s] survived
+[0.00609 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  33] ROR isTriangle: 
 --------------------------------------------------------------------------------
   24:         trian = 0
@@ -464,7 +464,7 @@
   31:             trian += 3
   32:         
 --------------------------------------------------------------------------------
-[0.17129 s] survived
+[0.00638 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  34] ROR isTriangle: 
 --------------------------------------------------------------------------------
   26:         if a == b:
@@ -478,7 +478,7 @@
   33:         if trian == 0:
   34:             if (a + b <= c or a + c <= b or b + c <= a):
 --------------------------------------------------------------------------------
-[0.17116 s] survived
+[0.00618 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  35] ROR isTriangle: 
 --------------------------------------------------------------------------------
   29:             trian += 2
@@ -492,7 +492,7 @@
   36:             else:
   37:                 return Triangle.Type.SCALENE
 --------------------------------------------------------------------------------
-[0.17055 s] survived
+[0.00599 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  36] ROR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -506,7 +506,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17133 s] survived
+[0.00622 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  37] ROR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -520,7 +520,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17100 s] survived
+[0.00625 s] killed by test14 (test_mutationAdequate.MutationAdequateTest)
    - [#  38] ROR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -534,7 +534,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17059 s] survived
+[0.00601 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  39] ROR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -548,7 +548,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17143 s] survived
+[0.00653 s] killed by test16 (test_mutationAdequate.MutationAdequateTest)
    - [#  40] ROR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -562,7 +562,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17093 s] survived
+[0.00610 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  41] ROR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -576,7 +576,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17420 s] survived
+[0.00615 s] killed by test15 (test_mutationAdequate.MutationAdequateTest)
    - [#  42] ROR isTriangle: 
 --------------------------------------------------------------------------------
   35:                 return Triangle.Type.INVALID
@@ -590,7 +590,7 @@
   42:         if (trian == 1 and a + b > c):
   43:             return Triangle.Type.ISOSCELES
 --------------------------------------------------------------------------------
-[0.17263 s] survived
+[0.00620 s] killed by test2 (test_mutationAdequate.MutationAdequateTest)
    - [#  43] ROR isTriangle: 
 --------------------------------------------------------------------------------
   35:                 return Triangle.Type.INVALID
@@ -604,7 +604,7 @@
   42:         if (trian == 1 and a + b > c):
   43:             return Triangle.Type.ISOSCELES
 --------------------------------------------------------------------------------
-[0.17294 s] survived
+[0.00818 s] killed by test3 (test_mutationAdequate.MutationAdequateTest)
    - [#  44] ROR isTriangle: 
 --------------------------------------------------------------------------------
   38:         
@@ -618,7 +618,7 @@
   45:             return Triangle.Type.ISOSCELES
   46:         elif (trian == 3 and b + c > a):
 --------------------------------------------------------------------------------
-[0.19584 s] survived
+[0.00657 s] killed by test2 (test_mutationAdequate.MutationAdequateTest)
    - [#  45] ROR isTriangle: 
 --------------------------------------------------------------------------------
   38:         
@@ -632,7 +632,7 @@
   45:             return Triangle.Type.ISOSCELES
   46:         elif (trian == 3 and b + c > a):
 --------------------------------------------------------------------------------
-[0.17195 s] survived
+[0.00611 s] killed by test2 (test_mutationAdequate.MutationAdequateTest)
    - [#  46] ROR isTriangle: 
 --------------------------------------------------------------------------------
   38:         
@@ -646,7 +646,7 @@
   45:             return Triangle.Type.ISOSCELES
   46:         elif (trian == 3 and b + c > a):
 --------------------------------------------------------------------------------
-[0.17169 s] survived
+[0.00652 s] killed by test9 (test_mutationAdequate.MutationAdequateTest)
    - [#  47] ROR isTriangle: 
 --------------------------------------------------------------------------------
   40:             return Triangle.Type.EQUILATERAL
@@ -660,7 +660,7 @@
   47:             return Triangle.Type.ISOSCELES
   48:         
 --------------------------------------------------------------------------------
-[0.17142 s] survived
+[0.00602 s] killed by test4 (test_mutationAdequate.MutationAdequateTest)
    - [#  48] ROR isTriangle: 
 --------------------------------------------------------------------------------
   40:             return Triangle.Type.EQUILATERAL
@@ -674,7 +674,7 @@
   47:             return Triangle.Type.ISOSCELES
   48:         
 --------------------------------------------------------------------------------
-[0.17253 s] survived
+[0.00683 s] killed by test4 (test_mutationAdequate.MutationAdequateTest)
    - [#  49] ROR isTriangle: 
 --------------------------------------------------------------------------------
   40:             return Triangle.Type.EQUILATERAL
@@ -688,7 +688,7 @@
   47:             return Triangle.Type.ISOSCELES
   48:         
 --------------------------------------------------------------------------------
-[0.17139 s] survived
+[0.00595 s] survived
    - [#  50] ROR isTriangle: 
 --------------------------------------------------------------------------------
   42:         if (trian == 1 and a + b > c):
@@ -701,7 +701,7 @@
   48:         
   49:         return Triangle.Type.INVALID
 --------------------------------------------------------------------------------
-[0.17053 s] survived
+[0.00639 s] killed by test3 (test_mutationAdequate.MutationAdequateTest)
    - [#  51] ROR isTriangle: 
 --------------------------------------------------------------------------------
   42:         if (trian == 1 and a + b > c):
@@ -714,7 +714,7 @@
   48:         
   49:         return Triangle.Type.INVALID
 --------------------------------------------------------------------------------
-[0.17083 s] survived
+[0.00634 s] killed by test3 (test_mutationAdequate.MutationAdequateTest)
    - [#  52] ROR isTriangle: 
 --------------------------------------------------------------------------------
   42:         if (trian == 1 and a + b > c):
@@ -727,18 +727,18 @@
   48:         
   49:         return Triangle.Type.INVALID
 --------------------------------------------------------------------------------
-[0.17076 s] survived
-[*] Mutation score [9.85960 s]: 0.0%
+[0.00530 s] survived
+[*] Mutation score [1.44049 s]: 94.2%
    - all: 52
-   - killed: 0 (0.0%)
-   - survived: 52 (100.0%)
+   - killed: 49 (94.2%)
+   - survived: 3 (5.8%)
    - incompetent: 0 (0.0%)
    - timeout: 0 (0.0%)
 [*] Start mutation process:
    - targets: isTriangle
    - tests: test_mutationAdequate
-[*] 1 tests passed:
-   - test_mutationAdequate [0.00010 s]
+[*] 16 tests passed:
+   - test_mutationAdequate [0.00063 s]
 [*] Start mutants generation and execution:
    - [#   1] AOR isTriangle: 
 --------------------------------------------------------------------------------
@@ -753,7 +753,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17018 s] survived
+[0.00579 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#   2] AOR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -767,7 +767,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17072 s] survived
+[0.00588 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#   3] AOR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -781,7 +781,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17370 s] survived
+[0.00573 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#   4] AOR isTriangle: 
 --------------------------------------------------------------------------------
   38:         
@@ -795,7 +795,7 @@
   45:             return Triangle.Type.ISOSCELES
   46:         elif (trian == 3 and b + c > a):
 --------------------------------------------------------------------------------
-[0.17359 s] survived
+[0.00604 s] killed by test2 (test_mutationAdequate.MutationAdequateTest)
    - [#   5] AOR isTriangle: 
 --------------------------------------------------------------------------------
   40:             return Triangle.Type.EQUILATERAL
@@ -809,7 +809,7 @@
   47:             return Triangle.Type.ISOSCELES
   48:         
 --------------------------------------------------------------------------------
-[0.17207 s] survived
+[0.00615 s] killed by test4 (test_mutationAdequate.MutationAdequateTest)
    - [#   6] AOR isTriangle: 
 --------------------------------------------------------------------------------
   42:         if (trian == 1 and a + b > c):
@@ -822,7 +822,7 @@
   48:         
   49:         return Triangle.Type.INVALID
 --------------------------------------------------------------------------------
-[0.17096 s] survived
+[0.00606 s] killed by test3 (test_mutationAdequate.MutationAdequateTest)
    - [#   7] ASR isTriangle: 
 --------------------------------------------------------------------------------
   23:         
@@ -836,7 +836,7 @@
   30:         if b == c:
   31:             trian += 3
 --------------------------------------------------------------------------------
-[0.17309 s] survived
+[0.00600 s] killed by test2 (test_mutationAdequate.MutationAdequateTest)
    - [#   8] ASR isTriangle: 
 --------------------------------------------------------------------------------
   25:         
@@ -850,7 +850,7 @@
   32:         
   33:         if trian == 0:
 --------------------------------------------------------------------------------
-[0.17211 s] survived
+[0.00613 s] killed by test4 (test_mutationAdequate.MutationAdequateTest)
    - [#   9] ASR isTriangle: 
 --------------------------------------------------------------------------------
   27:             trian += 1
@@ -864,7 +864,7 @@
   34:             if (a + b <= c or a + c <= b or b + c <= a):
   35:                 return Triangle.Type.INVALID
 --------------------------------------------------------------------------------
-[0.17560 s] survived
+[0.00631 s] killed by test3 (test_mutationAdequate.MutationAdequateTest)
    - [#  10] COI isTriangle: 
 --------------------------------------------------------------------------------
   17:     def classify(a, b, c):'''
@@ -878,7 +878,7 @@
   24:         trian = 0
   25:         
 --------------------------------------------------------------------------------
-[0.17292 s] survived
+[0.00585 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  11] COI isTriangle: 
 --------------------------------------------------------------------------------
   22:             return Triangle.Type.INVALID
@@ -892,7 +892,7 @@
   29:             trian += 2
   30:         if b == c:
 --------------------------------------------------------------------------------
-[0.17327 s] survived
+[0.00584 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  12] COI isTriangle: 
 --------------------------------------------------------------------------------
   24:         trian = 0
@@ -906,7 +906,7 @@
   31:             trian += 3
   32:         
 --------------------------------------------------------------------------------
-[0.17136 s] survived
+[0.00562 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  13] COI isTriangle: 
 --------------------------------------------------------------------------------
   26:         if a == b:
@@ -920,7 +920,7 @@
   33:         if trian == 0:
   34:             if (a + b <= c or a + c <= b or b + c <= a):
 --------------------------------------------------------------------------------
-[0.17175 s] survived
+[0.00561 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  14] COI isTriangle: 
 --------------------------------------------------------------------------------
   29:             trian += 2
@@ -934,7 +934,7 @@
   36:             else:
   37:                 return Triangle.Type.SCALENE
 --------------------------------------------------------------------------------
-[0.17358 s] survived
+[0.00621 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  15] COI isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -948,7 +948,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17072 s] survived
+[0.00637 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  16] COI isTriangle: 
 --------------------------------------------------------------------------------
   35:                 return Triangle.Type.INVALID
@@ -962,7 +962,7 @@
   42:         if (trian == 1 and a + b > c):
   43:             return Triangle.Type.ISOSCELES
 --------------------------------------------------------------------------------
-[0.17347 s] survived
+[0.00622 s] killed by test2 (test_mutationAdequate.MutationAdequateTest)
    - [#  17] COI isTriangle: 
 --------------------------------------------------------------------------------
   38:         
@@ -976,7 +976,7 @@
   45:             return Triangle.Type.ISOSCELES
   46:         elif (trian == 3 and b + c > a):
 --------------------------------------------------------------------------------
-[0.17327 s] survived
+[0.00636 s] killed by test2 (test_mutationAdequate.MutationAdequateTest)
    - [#  18] COI isTriangle: 
 --------------------------------------------------------------------------------
   40:             return Triangle.Type.EQUILATERAL
@@ -990,7 +990,7 @@
   47:             return Triangle.Type.ISOSCELES
   48:         
 --------------------------------------------------------------------------------
-[0.17153 s] survived
+[0.00668 s] killed by test4 (test_mutationAdequate.MutationAdequateTest)
    - [#  19] COI isTriangle: 
 --------------------------------------------------------------------------------
   42:         if (trian == 1 and a + b > c):
@@ -1003,7 +1003,7 @@
   48:         
   49:         return Triangle.Type.INVALID
 --------------------------------------------------------------------------------
-[0.17128 s] survived
+[0.00615 s] killed by test3 (test_mutationAdequate.MutationAdequateTest)
    - [#  20] DDL isTriangle: 
 --------------------------------------------------------------------------------
   12:         EQUILATERAL = 2
@@ -1019,7 +1019,7 @@
   20:         '''
   21:         if (a <= 0 or b <= 0 or c <= 0):
 --------------------------------------------------------------------------------
-[0.17362 s] survived
+[0.00575 s] survived
    - [#  21] LCR isTriangle: 
 --------------------------------------------------------------------------------
   17:     def classify(a, b, c):'''
@@ -1033,7 +1033,7 @@
   24:         trian = 0
   25:         
 --------------------------------------------------------------------------------
-[0.17088 s] survived
+[0.00669 s] killed by test12 (test_mutationAdequate.MutationAdequateTest)
    - [#  22] LCR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -1047,7 +1047,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17146 s] survived
+[0.00626 s] killed by test10 (test_mutationAdequate.MutationAdequateTest)
    - [#  23] LCR isTriangle: 
 --------------------------------------------------------------------------------
   38:         
@@ -1061,7 +1061,7 @@
   45:             return Triangle.Type.ISOSCELES
   46:         elif (trian == 3 and b + c > a):
 --------------------------------------------------------------------------------
-[0.17392 s] survived
+[0.00694 s] killed by test9 (test_mutationAdequate.MutationAdequateTest)
    - [#  24] LCR isTriangle: 
 --------------------------------------------------------------------------------
   40:             return Triangle.Type.EQUILATERAL
@@ -1075,7 +1075,7 @@
   47:             return Triangle.Type.ISOSCELES
   48:         
 --------------------------------------------------------------------------------
-[0.17225 s] survived
+[0.00652 s] killed by test9 (test_mutationAdequate.MutationAdequateTest)
    - [#  25] LCR isTriangle: 
 --------------------------------------------------------------------------------
   42:         if (trian == 1 and a + b > c):
@@ -1088,7 +1088,7 @@
   48:         
   49:         return Triangle.Type.INVALID
 --------------------------------------------------------------------------------
-[0.17085 s] survived
+[0.00741 s] killed by test9 (test_mutationAdequate.MutationAdequateTest)
    - [#  26] ROR isTriangle: 
 --------------------------------------------------------------------------------
   17:     def classify(a, b, c):'''
@@ -1102,7 +1102,7 @@
   24:         trian = 0
   25:         
 --------------------------------------------------------------------------------
-[0.17389 s] survived
+[0.00596 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  27] ROR isTriangle: 
 --------------------------------------------------------------------------------
   17:     def classify(a, b, c):'''
@@ -1116,7 +1116,7 @@
   24:         trian = 0
   25:         
 --------------------------------------------------------------------------------
-[0.17142 s] survived
+[0.00602 s] killed by test12 (test_mutationAdequate.MutationAdequateTest)
    - [#  28] ROR isTriangle: 
 --------------------------------------------------------------------------------
   17:     def classify(a, b, c):'''
@@ -1130,7 +1130,7 @@
   24:         trian = 0
   25:         
 --------------------------------------------------------------------------------
-[0.17057 s] survived
+[0.00625 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  29] ROR isTriangle: 
 --------------------------------------------------------------------------------
   17:     def classify(a, b, c):'''
@@ -1144,7 +1144,7 @@
   24:         trian = 0
   25:         
 --------------------------------------------------------------------------------
-[0.17399 s] survived
+[0.00747 s] killed by test13 (test_mutationAdequate.MutationAdequateTest)
    - [#  30] ROR isTriangle: 
 --------------------------------------------------------------------------------
   17:     def classify(a, b, c):'''
@@ -1158,7 +1158,7 @@
   24:         trian = 0
   25:         
 --------------------------------------------------------------------------------
-[0.17153 s] survived
+[0.00667 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  31] ROR isTriangle: 
 --------------------------------------------------------------------------------
   17:     def classify(a, b, c):'''
@@ -1172,7 +1172,7 @@
   24:         trian = 0
   25:         
 --------------------------------------------------------------------------------
-[0.17077 s] survived
+[0.00626 s] killed by test8 (test_mutationAdequate.MutationAdequateTest)
    - [#  32] ROR isTriangle: 
 --------------------------------------------------------------------------------
   22:             return Triangle.Type.INVALID
@@ -1186,7 +1186,7 @@
   29:             trian += 2
   30:         if b == c:
 --------------------------------------------------------------------------------
-[0.17469 s] survived
+[0.00615 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  33] ROR isTriangle: 
 --------------------------------------------------------------------------------
   24:         trian = 0
@@ -1200,7 +1200,7 @@
   31:             trian += 3
   32:         
 --------------------------------------------------------------------------------
-[0.17193 s] survived
+[0.00612 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  34] ROR isTriangle: 
 --------------------------------------------------------------------------------
   26:         if a == b:
@@ -1214,7 +1214,7 @@
   33:         if trian == 0:
   34:             if (a + b <= c or a + c <= b or b + c <= a):
 --------------------------------------------------------------------------------
-[0.17094 s] survived
+[0.00617 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  35] ROR isTriangle: 
 --------------------------------------------------------------------------------
   29:             trian += 2
@@ -1228,7 +1228,7 @@
   36:             else:
   37:                 return Triangle.Type.SCALENE
 --------------------------------------------------------------------------------
-[0.17369 s] survived
+[0.00588 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  36] ROR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -1242,7 +1242,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17238 s] survived
+[0.00623 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  37] ROR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -1256,7 +1256,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17040 s] survived
+[0.00652 s] killed by test14 (test_mutationAdequate.MutationAdequateTest)
    - [#  38] ROR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -1270,7 +1270,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17436 s] survived
+[0.00614 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  39] ROR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -1284,7 +1284,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17278 s] survived
+[0.00622 s] killed by test16 (test_mutationAdequate.MutationAdequateTest)
    - [#  40] ROR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -1298,7 +1298,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17127 s] survived
+[0.00726 s] killed by test1 (test_mutationAdequate.MutationAdequateTest)
    - [#  41] ROR isTriangle: 
 --------------------------------------------------------------------------------
   30:         if b == c:
@@ -1312,7 +1312,7 @@
   37:                 return Triangle.Type.SCALENE
   38:         
 --------------------------------------------------------------------------------
-[0.17217 s] survived
+[0.00626 s] killed by test15 (test_mutationAdequate.MutationAdequateTest)
    - [#  42] ROR isTriangle: 
 --------------------------------------------------------------------------------
   35:                 return Triangle.Type.INVALID
@@ -1326,7 +1326,7 @@
   42:         if (trian == 1 and a + b > c):
   43:             return Triangle.Type.ISOSCELES
 --------------------------------------------------------------------------------
-[0.17363 s] survived
+[0.00631 s] killed by test2 (test_mutationAdequate.MutationAdequateTest)
    - [#  43] ROR isTriangle: 
 --------------------------------------------------------------------------------
   35:                 return Triangle.Type.INVALID
@@ -1340,7 +1340,7 @@
   42:         if (trian == 1 and a + b > c):
   43:             return Triangle.Type.ISOSCELES
 --------------------------------------------------------------------------------
-[0.17119 s] survived
+[0.00628 s] killed by test3 (test_mutationAdequate.MutationAdequateTest)
    - [#  44] ROR isTriangle: 
 --------------------------------------------------------------------------------
   38:         
@@ -1354,7 +1354,7 @@
   45:             return Triangle.Type.ISOSCELES
   46:         elif (trian == 3 and b + c > a):
 --------------------------------------------------------------------------------
-[0.17175 s] survived
+[0.00609 s] killed by test2 (test_mutationAdequate.MutationAdequateTest)
    - [#  45] ROR isTriangle: 
 --------------------------------------------------------------------------------
   38:         
@@ -1368,7 +1368,7 @@
   45:             return Triangle.Type.ISOSCELES
   46:         elif (trian == 3 and b + c > a):
 --------------------------------------------------------------------------------
-[0.17406 s] survived
+[0.00613 s] killed by test2 (test_mutationAdequate.MutationAdequateTest)
    - [#  46] ROR isTriangle: 
 --------------------------------------------------------------------------------
   38:         
@@ -1382,7 +1382,7 @@
   45:             return Triangle.Type.ISOSCELES
   46:         elif (trian == 3 and b + c > a):
 --------------------------------------------------------------------------------
-[0.17077 s] survived
+[0.00672 s] killed by test9 (test_mutationAdequate.MutationAdequateTest)
    - [#  47] ROR isTriangle: 
 --------------------------------------------------------------------------------
   40:             return Triangle.Type.EQUILATERAL
@@ -1396,7 +1396,7 @@
   47:             return Triangle.Type.ISOSCELES
   48:         
 --------------------------------------------------------------------------------
-[0.17107 s] survived
+[0.00624 s] killed by test4 (test_mutationAdequate.MutationAdequateTest)
    - [#  48] ROR isTriangle: 
 --------------------------------------------------------------------------------
   40:             return Triangle.Type.EQUILATERAL
@@ -1410,7 +1410,7 @@
   47:             return Triangle.Type.ISOSCELES
   48:         
 --------------------------------------------------------------------------------
-[0.17399 s] survived
+[0.00607 s] killed by test4 (test_mutationAdequate.MutationAdequateTest)
    - [#  49] ROR isTriangle: 
 --------------------------------------------------------------------------------
   40:             return Triangle.Type.EQUILATERAL
@@ -1424,7 +1424,7 @@
   47:             return Triangle.Type.ISOSCELES
   48:         
 --------------------------------------------------------------------------------
-[0.17169 s] survived
+[0.00530 s] survived
    - [#  50] ROR isTriangle: 
 --------------------------------------------------------------------------------
   42:         if (trian == 1 and a + b > c):
@@ -1437,7 +1437,7 @@
   48:         
   49:         return Triangle.Type.INVALID
 --------------------------------------------------------------------------------
-[0.17222 s] survived
+[0.00612 s] killed by test3 (test_mutationAdequate.MutationAdequateTest)
    - [#  51] ROR isTriangle: 
 --------------------------------------------------------------------------------
   42:         if (trian == 1 and a + b > c):
@@ -1450,7 +1450,7 @@
   48:         
   49:         return Triangle.Type.INVALID
 --------------------------------------------------------------------------------
-[0.17369 s] survived
+[0.00612 s] killed by test3 (test_mutationAdequate.MutationAdequateTest)
    - [#  52] ROR isTriangle: 
 --------------------------------------------------------------------------------
   42:         if (trian == 1 and a + b > c):
@@ -1463,10 +1463,10 @@
   48:         
   49:         return Triangle.Type.INVALID
 --------------------------------------------------------------------------------
-[0.17139 s] survived
-[*] Mutation score [10.12339 s]: 0.0%
+[0.00538 s] survived
+[*] Mutation score [2.14202 s]: 94.2%
    - all: 52
-   - killed: 0 (0.0%)
-   - survived: 52 (100.0%)
+   - killed: 49 (94.2%)
+   - survived: 3 (5.8%)
    - incompetent: 0 (0.0%)
    - timeout: 0 (0.0%)
